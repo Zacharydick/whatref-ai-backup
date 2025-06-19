@@ -1,0 +1,326 @@
+[
+  {
+    "brand": "Rolex",
+    "model": "Submariner",
+    "reference": "116610LN",
+    "caseSize": "40mm",
+    "year": "2010-2020",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.885Z"
+  },
+  {
+    "brand": "Rolex",
+    "model": "Submariner",
+    "reference": "126610LN",
+    "caseSize": "41mm",
+    "year": "2020+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Rolex",
+    "model": "GMT-Master II",
+    "reference": "116710LN",
+    "caseSize": "40mm",
+    "year": "2007-2019",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Rolex",
+    "model": "GMT-Master II",
+    "reference": "126710BLNR",
+    "caseSize": "40mm",
+    "year": "2019+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Rolex",
+    "model": "Daytona",
+    "reference": "116500LN",
+    "caseSize": "40mm",
+    "year": "2016+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Rolex",
+    "model": "Datejust",
+    "reference": "116234",
+    "caseSize": "36mm",
+    "year": "2005-2016",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Rolex",
+    "model": "Day-Date",
+    "reference": "118238",
+    "caseSize": "36mm",
+    "year": "2000-2019",
+    "material": "Gold",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Omega",
+    "model": "Speedmaster Professional",
+    "reference": "311.30.42.30.01.005",
+    "caseSize": "42mm",
+    "year": "2014+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Omega",
+    "model": "Seamaster",
+    "reference": "210.30.42.20.01.001",
+    "caseSize": "42mm",
+    "year": "2018+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Omega",
+    "model": "Seamaster Planet Ocean",
+    "reference": "215.30.44.21.01.001",
+    "caseSize": "43.5mm",
+    "year": "2016+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Patek Philippe",
+    "model": "Nautilus",
+    "reference": "5711/1A-010",
+    "caseSize": "40mm",
+    "year": "2006-2021",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Patek Philippe",
+    "model": "Aquanaut",
+    "reference": "5167A-001",
+    "caseSize": "40mm",
+    "year": "2007+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Audemars Piguet",
+    "model": "Royal Oak",
+    "reference": "15202ST.OO.1240ST.01",
+    "caseSize": "39mm",
+    "year": "2012+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Audemars Piguet",
+    "model": "Royal Oak Offshore",
+    "reference": "26470ST.OO.A027CA.01",
+    "caseSize": "42mm",
+    "year": "2014+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Tudor",
+    "model": "Black Bay",
+    "reference": "79230N",
+    "caseSize": "41mm",
+    "year": "2016+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Tudor",
+    "model": "GMT",
+    "reference": "79830RB",
+    "caseSize": "41mm",
+    "year": "2018+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Cartier",
+    "model": "Santos",
+    "reference": "WSSA0009",
+    "caseSize": "39.8mm",
+    "year": "2018+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Cartier",
+    "model": "Tank",
+    "reference": "W5200004",
+    "caseSize": "31x25mm",
+    "year": "2017+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "IWC",
+    "model": "Pilot",
+    "reference": "IW377709",
+    "caseSize": "43mm",
+    "year": "2016+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "IWC",
+    "model": "Portuguese",
+    "reference": "IW371446",
+    "caseSize": "40.9mm",
+    "year": "2020+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Vacheron Constantin",
+    "model": "Overseas",
+    "reference": "4500V/110A-B126",
+    "caseSize": "41mm",
+    "year": "2016+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Vacheron Constantin",
+    "model": "Patrimony",
+    "reference": "81180/000R-9159",
+    "caseSize": "40mm",
+    "year": "2015+",
+    "material": "Gold",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Universal Genève",
+    "model": "Polerouter",
+    "reference": "20217-2",
+    "caseSize": "35mm",
+    "year": "1950s-1960s",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Universal Genève",
+    "model": "Polerouter Date",
+    "reference": "869112/01",
+    "caseSize": "34mm",
+    "year": "1960s-1970s",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Universal Genève",
+    "model": "Tri-Compax",
+    "reference": "22279",
+    "caseSize": "37mm",
+    "year": "1940s-1950s",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Universal Genève",
+    "model": "Space-Compax",
+    "reference": "885103/01",
+    "caseSize": "37mm",
+    "year": "1960s-1970s",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Universal Genève",
+    "model": "Golden Janus",
+    "reference": "21008",
+    "caseSize": "35mm",
+    "year": "1950s",
+    "material": "Gold",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Universal Genève",
+    "model": "Compax",
+    "reference": "22506",
+    "caseSize": "35mm",
+    "year": "1940s-1960s",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Jaeger-LeCoultre",
+    "model": "Reverso Classic",
+    "reference": "Q2578420",
+    "caseSize": "45.6x27mm",
+    "year": "2016+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Jaeger-LeCoultre",
+    "model": "Reverso Tribute",
+    "reference": "Q3978480",
+    "caseSize": "45.6x27.5mm",
+    "year": "2021+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Jaeger-LeCoultre",
+    "model": "Master Control Date",
+    "reference": "Q1548420",
+    "caseSize": "39mm",
+    "year": "2012+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Jaeger-LeCoultre",
+    "model": "Master Ultra Thin",
+    "reference": "Q1358420",
+    "caseSize": "38.5mm",
+    "year": "2014+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Jaeger-LeCoultre",
+    "model": "Master Geographic",
+    "reference": "Q1428421",
+    "caseSize": "39mm",
+    "year": "2015+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Jaeger-LeCoultre",
+    "model": "Master Chronograph",
+    "reference": "Q1538420",
+    "caseSize": "40mm",
+    "year": "2013+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Jaeger-LeCoultre",
+    "model": "Deep Sea Chronograph",
+    "reference": "Q208A570",
+    "caseSize": "44mm",
+    "year": "2019+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  },
+  {
+    "brand": "Jaeger-LeCoultre",
+    "model": "Polaris",
+    "reference": "Q9008471",
+    "caseSize": "41mm",
+    "year": "2018+",
+    "material": "Steel",
+    "scrapedAt": "2025-06-10T02:25:14.886Z"
+  }
+]
