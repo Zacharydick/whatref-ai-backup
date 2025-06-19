@@ -1,0 +1,16 @@
+# Ignore dependencies and caches
+node_modules/
+.cache/
+dist/
+build/
+
+# System & log files
+*.log
+.DS_Store
+.env
+
+# Xcode stuff
+*.xcworkspace
+*.xcodeproj
+*.xcuserstate
+DerivedData/
