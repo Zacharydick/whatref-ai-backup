@@ -10,8 +10,6 @@ import {
   ListItemText,
   ListItemAvatar,
   Divider,
-  Card,
-  CardMedia,
   Button,
   useTheme,
   useMediaQuery
