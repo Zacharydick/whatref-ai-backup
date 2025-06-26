@@ -232,8 +232,18 @@ function App() {
   };
 
   return (
-    <Container maxWidth="md" sx={{ px: { xs: 0.5, sm: 2, md: 4 } }}>
-      <Box sx={{ my: { xs: 2, sm: 4 }, mx: 'auto', maxWidth: 700 }}>
+    <Container maxWidth={false} sx={{
+      width: '100vw',
+      maxWidth: '1600px',
+      px: { xs: 0.5, sm: 8, md: 12 },
+      mx: 'auto'
+    }}>
+      <Box sx={{
+        my: { xs: 2, sm: 4 },
+        mx: 'auto',
+        maxWidth: { xs: '100vw', sm: '98vw', md: 1500 },
+        width: '100%'
+      }}>
         <Typography variant="h3" component="h1" gutterBottom align="center" sx={{ fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' } }}>
           WhatRef.ai
         </Typography>
@@ -282,69 +292,76 @@ function App() {
         )}
 
         {result && (
-          <Card
-            sx={{
-              display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
-              alignItems: { xs: 'center', sm: 'stretch' },
-              p: { xs: 2, sm: 3 },
-              mb: 2,
-              boxShadow: 3,
-              borderRadius: 3,
-              maxWidth: 800,
-              mx: 'auto',
-              bgcolor: 'background.paper',
-            }}
-          >
-            <CardMedia
-              component="img"
-              image={result.image}
-              alt="Analyzed wristwatch"
-              sx={{
-                width: { xs: '100%', sm: 260, md: 320 },
-                height: { xs: 220, sm: 320, md: 360 },
-                objectFit: 'cover',
-                borderRadius: 2,
-                boxShadow: 2,
-                mb: { xs: 2, sm: 0 },
-                mr: { xs: 0, sm: 4 },
-                ml: { xs: 0, sm: 0 },
-                alignSelf: { xs: 'center', sm: 'flex-start' },
-              }}
-            />
-            <Box sx={{ flex: 1, width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative' }}>
-              <Typography
-                variant="h5"
-                gutterBottom
-                sx={{
-                  fontSize: { xs: '1.3rem', sm: '1.7rem' },
-                  fontWeight: 700,
-                  mb: 2,
-                  textAlign: { xs: 'center', sm: 'left' },
-                }}
-              >
-                Analysis Result
-              </Typography>
-              <Box sx={{ mb: 2, fontSize: { xs: '1rem', sm: '1.1rem' }, '& ul': { pl: { xs: 3, sm: 2 } }, '& ol': { pl: { xs: 3, sm: 2 } } }}>
-                <ReactMarkdown>{result.result}</ReactMarkdown>
-              </Box>
-              {/* User info text field */}
-              <Box sx={{ mb: 2 }}>
-                <label htmlFor="user-info-field">
-                  <Typography variant="subtitle2" sx={{ fontWeight: 500 }}>
-                    Wrong guess? Add more info about your watch and click guess again below
-                  </Typography>
-                </label>
-                <textarea
-                  id="user-info-field"
-                  value={userInfo}
-                  onChange={e => setUserInfo(e.target.value)}
-                  rows={2}
-                  style={{ width: '100%', padding: 8, borderRadius: 6, border: '1px solid #ccc', fontSize: '1rem', marginTop: 4 }}
-                  placeholder="e.g. Brand, model, year, caseback engravings, or anything else you know"
+          <Paper sx={{
+            p: { xs: 3, sm: 6 },
+            mb: 4,
+            maxWidth: { xs: '100vw', sm: '100%', md: '100%' },
+            mx: 'auto',
+            width: '100%'
+          }}>
+            <ListItem alignItems="flex-start" sx={{ py: { xs: 2, sm: 3 }, flexDirection: { xs: 'column', sm: 'row' }, alignItems: { xs: 'flex-start', sm: 'flex-start' } }}>
+              <ListItemAvatar sx={{ minWidth: 0, mb: { xs: 3, sm: 0 } }}>
+                <Box
+                  component="img"
+                  src={result.image}
+                  alt="Watch thumbnail"
+                  sx={{
+                    width: { xs: 200, sm: 320, md: 400 },
+                    height: { xs: 200, sm: 320, md: 400 },
+                    objectFit: 'cover',
+                    borderRadius: 2,
+                    boxShadow: 2
+                  }}
                 />
-              </Box>
-              <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 70 }}>
+              </ListItemAvatar>
+              <ListItemText
+                primary={
+                  <Box sx={{ mb: 2 }}>
+                    <ReactMarkdown
+                      components={{
+                        strong: ({node, ...props}) => <span style={{fontWeight: 700}} {...props} />,
+                        li: ({node, ...props}) => <li style={{marginBottom: 12, fontSize: '1.25rem'}} {...props} />,
+                        p: ({node, ...props}) => <p style={{marginBottom: 12, fontSize: '1.25rem'}} {...props} />,
+                      }}
+                    >
+                      {(result.result || '')
+                        .replace(/Reference Number:/g, '**Reference Number:**')
+                        .replace(/Summary:/g, '**Summary:**')
+                        .replace(/Other Details:/g, '**Other Details:**')
+                        .replace(/Brand and Model:/g, '**Brand and Model:**')
+                        .replace(/Reasoning:/g, '**Reasoning:**')}
+                    </ReactMarkdown>
+                  </Box>
+                }
+                secondary={
+                  <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{ fontSize: { xs: '1.1rem', sm: '1.2rem' } }}
+                  >
+                    {new Date(result.timestamp).toLocaleString()}
+                  </Typography>
+                }
+                sx={{ ml: { xs: 0, sm: 3 }, width: '100%' }}
+              />
+            </ListItem>
+            {/* User info text field and Guess Again button */}
+            <Box sx={{ mt: 3, width: '100%' }}>
+              <label htmlFor="user-info-field">
+                <Typography variant="subtitle2" sx={{ fontWeight: 500, mb: 1, fontSize: { xs: '1.1rem', sm: '1.2rem' } }}>
+                  Wrong guess? Add more info about your watch and click guess again below
+                </Typography>
+              </label>
+              <textarea
+                id="user-info-field"
+                value={userInfo}
+                onChange={e => setUserInfo(e.target.value)}
+                rows={2}
+                style={{ width: '100%', padding: 14, borderRadius: 10, border: '1.5px solid #d1d5db', fontSize: '1.15rem', marginTop: 8, background: '#fafbfc', resize: 'vertical' }}
+                placeholder="e.g. Brand, model, year, caseback engravings, or anything else you know"
+              />
+              <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 80, mt: 2 }}>
                 {guessAttempts < 3 ? (
                   <Button
                     variant="outlined"
@@ -354,29 +371,25 @@ function App() {
                       mb: 2,
                       mt: 1,
                       width: { xs: '100%', sm: 'auto' },
-                      fontSize: { xs: '1rem', sm: '1.1rem' },
-                      py: 1,
-                      maxWidth: 340,
+                      fontSize: { xs: '1.15rem', sm: '1.25rem' },
+                      py: 1.5,
+                      px: 5,
+                      maxWidth: 400,
+                      fontWeight: 600,
+                      letterSpacing: '0.5px',
                     }}
                   >
                     {guessAgainLoading ? 'Analyzing Again...' : `Guess Again (${3 - guessAttempts} left)`}
                   </Button>
                 ) : (
-                  <Typography color="error" align="center" sx={{ my: 2, fontWeight: 500, fontSize: { xs: '1rem', sm: '1.1rem' } }}>
+                  <Typography color="error" align="center" sx={{ my: 2, fontWeight: 500, fontSize: { xs: '1.15rem', sm: '1.25rem' } }}>
                     You've reached the maximum number of guesses for this image.<br />
                     Please try uploading a new photo of your watch for better results.
                   </Typography>
                 )}
               </Box>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                sx={{ fontSize: { xs: '0.95rem', sm: '1.05rem' }, mt: 1, textAlign: { xs: 'center', sm: 'left' } }}
-              >
-                Analyzed on: {new Date(result.timestamp).toLocaleString()}
-              </Typography>
             </Box>
-          </Card>
+          </Paper>
         )}
 
         {history.length > 0 && (
